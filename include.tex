@@ -1,0 +1,16 @@
+\ifluatex
+  \renewcommand{\textls}[2][5]{%
+    \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
+  }
+  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
+  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\fi    
+\newenvironment{rawtex}{}{}
+\usepackage{expex}
+\usepackage{array}
+\usepackage[linguistics]{forest}
+\usepackage[autostyle,english=british]{csquotes}
+\usepackage{phonrule}

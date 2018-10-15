@@ -1,0 +1,1 @@
+This is skeleton for a talk that uses [pandoc](https://www.pandoc.org) to create synchronized slides in Beamer (using the [Metropolis theme](https://github.com/matze/mtheme)) and handouts using [Tufte style](https://tufte-latex.github.io/tufte-latex/). Various options are provided in the Makefile. For portability, it relies on stock `pandoc` templates.
