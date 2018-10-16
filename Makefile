@@ -60,9 +60,9 @@ handoutcompile:
 	egrep -c $(RERUNBIB) $(HANDOUT).log && (biber $(HANDOUT); lualatex $(HANDOUT)) ; true
 	egrep -q $(RERUN) $(HANDOUT).log && lualatex $(HANDOUT)  ; true
 
-all: beamer handout
+pandocall: beamer handout
 
-compileall: beamercompile handoutcompile
+all: beamercompile handoutcompile
 
 clean:
 	rm $(HANDOUT).tex $(SLIDES).tex $(HANDOUT).pdf $(SLIDES).pdf *.snm *.log *.aux *.nav *.xml *.bbl *.bcf *.blg *.out *.toc

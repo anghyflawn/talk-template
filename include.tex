@@ -10,7 +10,11 @@
 \fi    
 \newenvironment{rawtex}{}{}
 \usepackage{expex}
+\lingset{exskip=\baselineskip, interpartskip=0pt}
 \usepackage{array}
 \usepackage[linguistics]{forest}
 \usepackage[autostyle,english=british]{csquotes}
 \usepackage{phonrule}
+\usepackage{eqparbox}
+\newcommand\mb[1]{\eqparbox[t]{examples}{#1}\hspace{1em}}
+\newcommand{\twe}[3]{\mb{#1}\eqparbox[t]{orths}{\textit{#2}}\hspace{1em}`#3'} % three-way example
